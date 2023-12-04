@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="" th:href="@{/css/jobApp.css}" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title> JOB PORTAL WEBSITE</title>
+</head>
+<body>
+<nav class="navbar">
+    <h2 class="navbar-logo"><a href='#'>JOBACT</a></h2>
+    <div class="navbar-menu">
+        <a class="clicked-option">Home</a>
+        <a th:href="@{/jobs}" >Jobs</a>
+        <a th:href="@{/companies}">Companies</a>
+        <a th:href="@{/registration}">Sign In</a>
+        <a th:href="@{/login}"> Sign Up</a>
+    </div>
+    <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+    </div>
+</nav>
+<header>
+    <h1 class="header-title">
+        FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY
+    </h1>
+</header>
+
+<!--<script th:src="@{/jobApp.css}" type="text/css"></script>-->
+</body>
+</html>

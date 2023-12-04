@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>update into movies library</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="" th:href="@{/css/register.css}" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--    <script src="./script.js"></script>-->
+</head>
+
+<body>
+<div class="main_content">
+    <div class="container">
+        <div class="header">
+            <p>Register</p>
+        </div>
+        <form id="form" action="#">
+            <div class="Sub_container">
+                <div class="left_container">
+                    <div class="content-field">
+                        <p>Name</p>
+                        <input type="text" name="name" id="name">
+                        <div class="error"></div>
+                    </div>
+                    <div class="content-field">
+                        <p>Email</p>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="content-field">
+                        <p>Phone Number</p>
+                        <input type="text" name="PhoneNumber" id="PhoneNumer">
+                    </div>
+
+                    <div class="content-field">
+                        <div>
+                            <p>Job-Role</p>
+                        </div>
+                        <select name="Job_Role" id="Job_Role" >
+                            <option value="fullstack developer"> Fullstack developer</option>
+                            <option value="Cyber Security"> Cyber Security</option>
+                            <option value="UI/UX designer"> UI/UX designer</option>
+                            <option value="Block chain"> Block chain</option>
+                            <option value="Artificial Intelligence"> Artificial Intelligence</option>
+                            <div class="error"></div>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="right-container">
+                    <div class="content-field">
+                        <p>Address</p>
+                        <textarea name="address" id="address"></textarea>
+                    </div>
+                    <div class="content-field">
+                        <p>City</p>
+                        <input type="text" name="City" id="City">
+                    </div>
+                    <div class="content-field">
+                        <p>Date Of Birth</p>
+                        <input type="Date" name="Date" id="Date">
+                    </div>
+                    <div class="content-field">
+                        <p>Upload your CV</p>
+                        <input type="file" name="file" id="file">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <input type="submit"  onclick="validation()">
+            </div>
+        </form>
+    </div>
+</div>
+ <script th:src="@{/js/register.js}" type="text/javascript"></script>
+</body>
+
+</html>

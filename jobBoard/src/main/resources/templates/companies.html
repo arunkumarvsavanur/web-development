@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>companies    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="" th:href="@{/css/compaines.css}" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href='#'>JOBACT</a></h2>
+        <div class="navbar-menu">
+            <a th:href="@{/jobApp}">Home</a>
+            <a th:href="@{/jobs}">Jobs</a>
+            <a class="clicked-option">Companies</a>
+            <a th:href="@{/registration}">Sign In</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+    <div>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-card">
+                    <input class="search-input" type="text" placeholder="company title or keywords">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="job-list" id="jobs">
+        </div>
+    </div>
+</section>
+    <script th:src="@{/js/company.js}" type="text/javascript"></script>
+</body>
+</html>

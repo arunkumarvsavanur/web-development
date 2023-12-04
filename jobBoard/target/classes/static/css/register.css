@@ -1,0 +1,97 @@
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main_content {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            box-shadow: 0px 0px 3px #000000;
+            width: 80vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header {
+            padding: 1%;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+
+        .Sub_container {
+            width: 100%;
+            padding: 2%;
+            box-shadow: 0px 0px 3px #999999;
+            display: flex;
+        }
+
+        .left_container {
+            width: 50%;
+        }
+
+        .right-container {
+            width: 50%;
+        }
+
+        .content-field {
+            padding: 2%;
+        }
+
+        .content-field p {
+            font-size: 1.5vw;
+            padding: 1% 0%;
+        }
+
+        .content-field input {
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 3px #555551;
+            width: 80%;
+        }
+
+        .content-field select {
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 3px #555551;
+            width: 80%;
+        }
+
+        .content-field textarea {
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+            outline: none;
+            border: none;
+            overflow: hidden;
+            box-shadow: 0px 0px 3px #555551;
+            width: 80%;
+            height: 2vw;
+        }
+
+        .footer-content {
+            padding: 3%;
+        }
+
+        .footer-content input {
+            padding: 0.5% 2%;
+            color: #ffffff;
+            font-size: 1.3vw;
+            border: none;
+            outline: none;
+            cursor:pointer;
+            border-radius: 2vw;
+            box-shadow: 0px 0px 7px #32bdd2;
+            background-color: #32bdd2;
+        }
